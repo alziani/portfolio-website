@@ -2,4 +2,36 @@
     background: #151515 url(/images/intro-bg.jpg) center center no-repeat;
     background-size: cover;
     height: 100vh;
+    background-attachment: fixed;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.header .text-container {
+    z-index: 10;
+}
+
+.icons {
+    transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+    .icons {
+        bottom: 40px !important;
+    }
+
+    .icons i {
+        font-size: 40px;
+
+    }
+
+
 }
