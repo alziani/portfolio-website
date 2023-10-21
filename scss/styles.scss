@@ -5,7 +5,8 @@
     background-attachment: fixed;
 }
 
-.header::after {
+.header::after,
+.services::before {
     content: "";
     position: absolute;
     top: 0;
@@ -23,6 +24,27 @@
     transform: translateX(-50%);
 }
 
+.project:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+    opacity: 0.8;
+}
+
+.services {
+    background: url('/images/bg.jpg') center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.services .container {
+    z-index: 10;
+}
+
+.statistics .parent>div {
+    border-right: solid 1px #000;
+}
+
 @media (max-width: 768px) {
     .icons {
         bottom: 40px !important;
@@ -31,6 +53,11 @@
     .icons i {
         font-size: 40px;
 
+    }
+
+    .statistics .parent>div {
+        border-bottom: solid 1px #000;
+        border-right: none;
     }
 
 
