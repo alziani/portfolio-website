@@ -45,6 +45,21 @@
     border-right: solid 1px #000;
 }
 
+.contact input,
+.contact textarea {
+    background: transparent;
+    border-radius: none !important;
+    border: none;
+    border-bottom: white solid 1px;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    background: transparent;
+
+}
+
+
 @media (max-width: 768px) {
     .icons {
         bottom: 40px !important;
